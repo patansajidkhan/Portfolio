@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajid Khan | Portfolio</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      background: #1e293b;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e40af, #1e293b);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.3rem; margin-top: 10px; }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1e293b;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card h3 { margin-bottom: 10px; color: #1e40af; }
+
+    /* Lists */
+    ul { margin-left: 20px; margin-top: 10px; }
+
+    /* Contact */
+    .contact a {
+      color: #1e40af;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover { color: #38bdf8; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #1e293b;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Sajid Khan</h1>
+    <p>AI/ML Enthusiast | Data Analyst | Recent Graduate</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a recent graduate in Artificial Intelligence and Data Science from 
+        Siddhartha Engineering College. I am passionate about applying AI and ML 
+        to solve real-world problems and eager to contribute to innovative projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Major Project: Efficient Android Malware Classification Using Vision Transformers</h3>
+      <p>
+        Built a hybrid model combining MobileNetV2 (for feature extraction) and Vision Transformers (for classification). 
+        This approach improved accuracy and robustness in malware classification for Android devices.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Mini Project 1: Harnessing ML for Malware Classification in IoMT</h3>
+      <p>
+        Applied machine learning techniques to secure Internet of Medical Things (IoMT) devices, 
+        enhancing security in resource-constrained healthcare environments.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Mini Project 2: Enhanced Malware Classification Using MobileNetV2</h3>
+      <p>
+        Designed a lightweight malware detection model using depthwise separable convolutions. 
+        Achieved high accuracy across all malware classes while keeping computational cost low.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Achievement</h3>
+      <p>
+        Mini project “Classification of Malware Using Deep Learning Architectures” 
+        was presented at the ICUIS International Conference.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Programming: Python, C</li>
+        <li>Databases: SQL</li>
+        <li>Visualization: Power BI</li>
+        <li>Machine Learning: Scikit-learn, Ensemble Learning, XGBoost</li>
+        <li>Deep Learning: TensorFlow, Keras, CNNs, MobileNetV2, Vision Transformers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Programming Essentials in Python (Cisco)</li>
+        <li>Supervised Machine Learning (Coursera)</li>
+        <li>Essentials in C (Cisco)</li>
+        <li>AI for Everyone (Coursera)</li>
+        <li>Power BI (Great Learning)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/pathansajidkhan/" target="_blank">linkedin.com/in/pathansajidkhan</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sajid Khan | Portfolio</p>
+  </footer>
+
+</body>
+</html>
